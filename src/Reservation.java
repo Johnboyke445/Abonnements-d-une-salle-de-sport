@@ -7,12 +7,6 @@ public class Reservation {
     private List<Prestation> prestations;
     private StatutReservation statut;
 
-    // Enum définie à l’intérieur de la classe pour le statut
-    public enum StatutReservation {
-        CONFIRMEE, // réservation confirmée
-        ANNULEE// réservation annulée
-    }
-
     //Constructeur par default
     public Reservation() {
         this.seance=null;
