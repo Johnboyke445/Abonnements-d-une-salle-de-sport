@@ -41,7 +41,7 @@ public class Reservation {
     }
 
     public String toString() {
-        return "Reservation pour " +  (seance != null ? seance.getNom() : "Aucune séance") + "  Statut: " + statut + "  Total prestations: " + coutPrestations() + "€";
+        return "Reservation pour : " +  (seance != null ? seance.getNom() : "Aucune séance") + "  Statut : " + statut + "  Total prestations : " + coutPrestations() + "€";
     }
 
 }
