@@ -1,25 +1,28 @@
-public class Presentation {
+public class Prestation {
 
     private String code;
     private String libelle;
     private double prix;
 
-    public Presentation(){
-        String code;
-        String libelle;
-        double prix;
+    //Constructeur par default
+    public Prestation(){
+       this.code = "";
+       this.libelle = "";
+       this.prix = 0;
     }
 
-    public Presentation(String code, String libelle, double prix) {
+    //Constructeur paramétré
+    public Prestation(String code, String libelle, double prix) {
         this.code = code;
         this.libelle = libelle;
         this.prix = prix;
     }
 
+    //Getter
     public String getCode(){
         return this.code;
     }
-
+    //Setter
     public void setCode(String code){
         this.code = code;
     }
