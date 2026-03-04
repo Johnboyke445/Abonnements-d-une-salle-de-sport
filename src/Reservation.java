@@ -21,8 +21,6 @@ public class Reservation {
         this.statut = StatutReservation.CONFIRMEE;
     }
 
-
-
     public void ajouterPrestation(Prestation p) {
         prestations.add(p); // ajoute l'objet Prestation à la liste
     }
