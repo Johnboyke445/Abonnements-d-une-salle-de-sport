@@ -33,6 +33,6 @@ public abstract class Abonnement {
     public abstract int creditsCoachInclus();
 
     public String toString() {
-        return  "Abonnement : " + this.reference + " début : " + this.dateDebut + " Fin : " + this.dateFin() + " Durée : " + this.dureeMois + " mois" + " prixMensuel : " + this.prixMensuel + "€" + " prix total : " + this.coutTotal() + "€";
+        return  "/ Abonnement : " + this.reference + " / début : " + this.dateDebut + " / Fin : " + this.dateFin() + " / Durée : " + this.dureeMois + " / mois" + " / prixMensuel : " + this.prixMensuel + "€" + " / prix total : " + this.coutTotal() + "€";
     }
 }

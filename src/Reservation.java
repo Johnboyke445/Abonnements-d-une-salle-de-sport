@@ -4,7 +4,7 @@ import java.util.List;
 public class Reservation {
 
     private Seance seance;
-    private List<Prestation> prestations;
+    private List<Prestation> prestations = new ArrayList<>();
     private StatutReservation statut;
 
     //Constructeur par default
@@ -19,6 +19,10 @@ public class Reservation {
         this.seance = seance;
         this.prestations = new ArrayList<>();
         this.statut = StatutReservation.CONFIRMEE;
+    }
+
+    public Seance getSeance() {
+        return seance;
     }
 
     public void ajouterPrestation(Prestation p) {

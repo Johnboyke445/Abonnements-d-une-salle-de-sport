@@ -1,25 +1,26 @@
-import java.time.LocalDate;
 import java.time.LocalDateTime;
 
 public class Seance {
 
     private int id;
     private String nom;
-    private LocalDateTime date;
+    private LocalDateTime dateHeure;
+    private int capaciteMax;
 
     //Constructeur par default
     public Seance() {
         this.id = 0;
         this.nom= "";
-        this.date= null;
-
+        this.dateHeure= null;
+        this.capaciteMax = 0;
     }
 
     //Constructeur paramétré
-    public Seance(int id, String nom, LocalDateTime date) {
+    public Seance(int id, String nom, LocalDateTime dateHeure, int capaciteMax) {
         this.id = id;
         this.nom = nom;
-        this.date = date;
+        this.dateHeure = dateHeure;
+        this.capaciteMax = capaciteMax;
     }
 
     public int getId() {
@@ -36,11 +37,22 @@ public class Seance {
         this.nom = nom;
     }
 
-    public LocalDateTime getDate() {
-        return date;
+
+
+    public LocalDateTime getDateHeure() {
+        return dateHeure;
     }
 
     public void setDate(LocalDateTime date) {
-        this.date = date;
+        this.dateHeure = date;
     }
+
+    public int getCapaciteMax() {
+        return capaciteMax;
+    }
+    public void setCapaciteMax(int capaciteMax) {
+        this.capaciteMax = capaciteMax;
+    }
+
+
 }
